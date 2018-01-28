@@ -19,4 +19,4 @@ Then you can access the app on <http://localhost:4200>
 
 ### Example The App
 
-![alt text](https://ibb.co/eOSN3b)
+![alt text](https://image.ibb.co/daRt9G/weather_widget.png)
