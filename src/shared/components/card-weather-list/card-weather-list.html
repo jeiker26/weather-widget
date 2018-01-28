@@ -1,0 +1,9 @@
+<div class="list-weather animated bounceInRight">
+  <div class="weather-day-container {{ day.weather[0].icon | colorWeather }}" *ngFor="let day of list">
+    <p class="day-title">{{ day.dt_txt | getDay }}</p>
+    <i class="wi main-icon {{ day.weather[0].icon | iconWeather }}"></i>
+    <div class="temp">
+      {{ day.main.temp | transformDegrees }} <i class="celsius-edit wi wi-celsius"></i>
+    </div>
+  </div>
+</div>

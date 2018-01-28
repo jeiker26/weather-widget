@@ -1,0 +1,27 @@
+<div class="bg-img">
+  <div class="overlay">
+    <div class="grid" *ngIf="weather">
+      <!-- SECTION: MAIN -->
+      <div class="title">
+        <p class="title-city">{{ weather.name }}</p>
+        <p class="subtitle-time">Today</p>
+      </div>
+
+      <!-- SECTION: WEATHER -->
+      <div class="row">
+        <app-weather-today [data]="{ details: weather.main, weather: weather.weather[0]}"></app-weather-today>
+      </div>
+
+      <!-- SECTION: WEATHER WEEK -->
+      <div>
+        <app-card-weather-list [list]="weatherList" *ngIf="weatherList"></app-card-weather-list>
+      </div>
+
+      <!-- SECTION: SEARCH CITY -->
+      <div>
+        <app-search-city (change)="onChangeLocation($event)"></app-search-city>
+      </div>
+    </div>
+  </div>
+</div>
+

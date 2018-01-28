@@ -1,0 +1,50 @@
+.weather-details-container {
+  display: flex;
+
+  .wd-subcontainer {
+    padding: 20px;
+
+    &.temp {
+      font-size: 70px;
+    }
+
+    &.temp-icon {
+      .title {
+        text-align: center;
+        font-size: 27px;
+        margin-top: 30px;
+      }
+
+      .main-icon {
+        font-size: 180px;
+      }
+    }
+
+    &.weather-info-details {
+      .pressure,
+      .humidity,
+      .temp-min,
+      .temp-max {
+        margin-bottom: 12px;
+
+        .title {
+          line-height: 30px;
+          vertical-align: top;
+        }
+
+        .wi:not(.celsius-edit) {
+          font-size: 30px;
+          width: 50px;
+        }
+
+        .celsius-edit {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}

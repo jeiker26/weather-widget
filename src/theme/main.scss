@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+// 1. Base css
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+// 2. Base stuff
+@import 'abstracts/all';
+
+// 3. Base stuff
+@import 'base/all';
+
+// 4. Structure
+@import 'structures/all';
+
+// 5. Components
+@import 'components/all';
+
+// 6. Icons
+@import 'fonts/weather-icons/sass/weather-icons.min';

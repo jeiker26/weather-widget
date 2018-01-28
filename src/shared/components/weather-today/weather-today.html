@@ -1,0 +1,34 @@
+<div class="weather-details-container">
+  <div class="wd-subcontainer temp">
+    {{ data.details.temp | transformDegrees }} <i class="celsius-edit wi wi-celsius"></i>
+  </div>
+
+  <div class="wd-subcontainer temp-icon animated pulse">
+    <i class="wi main-icon {{ data.weather.icon | iconWeather }}"></i>
+    <p class="title">{{ data.weather.main }}</p>
+  </div>
+
+  <div class="wd-subcontainer weather-info-details">
+
+    <div class="temp-max">
+      <i class="wi wi-thermometer"></i>
+      <span class="title">{{ data.details.temp_max | transformDegrees }} <i class="celsius-edit wi wi-celsius"></i> max</span>
+    </div>
+
+    <div class="temp-min">
+      <i class="wi wi-thermometer-exterior"></i>
+      <span class="title">{{ data.details.temp_min | transformDegrees }} <i class="celsius-edit wi wi-celsius"></i> min</span>
+    </div>
+
+    <div class="humidity">
+      <i class="wi wi-raindrop"></i>
+      <span class="title">{{ data.details.humidity }} humidity</span>
+    </div>
+
+    <div class="pressure">
+      <i class="wi wi-strong-wind"></i>
+      <span class="title">{{ data.details.pressure }} pressure</span>
+    </div>
+
+  </div>
+</div>
